@@ -26,3 +26,5 @@ notifications:
   irc: "irc.freenode.org#mezzanine"
   on_success: change
   on_failure: change
+after_success:
+  - bash <(curl -s https://copilot.blackducksoftware.com/ci/travis/scripts/upload)
